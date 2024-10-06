@@ -13,5 +13,5 @@ def get_users():
 @router.post("/")
 def create_user(user: dict):
     users.append(user)
-    return {"message": "User created successfully", "user": user}
+    return {"message": "User created", "user": user}
 
